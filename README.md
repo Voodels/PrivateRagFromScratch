@@ -1,6 +1,6 @@
 # Vector Database RAG: Local Retrieval-Augmented Generation System
 
-![Token Distribution](./token_distribution.png)
+![RAG BANNER](./images/rag_banner.png)
 
 ## 📚 What is RAG (Retrieval-Augmented Generation)?
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG System Architecture</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <h1>Vector Database RAG: System Architecture</h1>
+    <div class="mermaid">
+        flowchart TD
+            A[User Query] --> B[Embedding Model]
+            C[(PDF Documents)] --> D[Document Processing]
+            D --> E[Text Chunking]
+            E --> F[Create Embeddings]
+            F --> G[(Vector Database<br/>Qdrant)]
+            B --> H{Semantic Search}
+            G --> H
+            H --> I[Relevant Context]
+            A --> J[Context + Query]
+            I --> J
+            J --> K[LLM]
+            K --> L[Generated Response]
+            L --> M[User]
+    </div>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+</html>

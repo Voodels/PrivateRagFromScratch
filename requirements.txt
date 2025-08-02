@@ -1,0 +1,13 @@
+torch
+numpy
+pandas
+matplotlib
+requests
+PyMuPDF
+spacy
+sentence-transformers
+transformers
+bitsandbytes
+rich
+accelerate
+qdrant-client
